@@ -84,7 +84,7 @@ body {
 
 .main.active {
   width: calc(100% - 0px);
-  left: 0px;
+  left: 0;
 }
 
 .main .topbar {
@@ -105,7 +105,7 @@ body {
 
 .main .topbar.active {
   width: calc(100% - 0px);
-  left: 0px;
+  left: 0;
 
 }
 
@@ -189,4 +189,90 @@ p {
   letter-spacing: 1px;
   margin-top: 10px;
   text-decoration: none;
+}
+
+.socialMedia {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+}
+
+.socialMedia li {
+  list-style: none;
+}
+
+.socialMedia li a {
+  /*display: inline-block;*/
+  width: 40px;
+  height: 40px;
+  background: rgba(0,0,0,0.05);
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.2em;
+}
+
+.socialMedia li a:hover {
+  background: var(--black2);
+  color: #fff;
+}
+
+.adjust {
+  position: relative;
+  min-height: 100vh;
+  padding: 0 40px;
+  padding-top: 80px;
+  background: var(--white);
+  color: var(--black);
+  display: inline-block;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title h2 {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.title h2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 50px;
+  height: 1px;
+  background: var(--black);
+}
+
+.about .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about .content .textBox {
+  width: 49%;
+  min-width: 49%;
+}
+
+.about .content .imgBx {
+  margin-left: 40px;
+}
+
+.about .content .imgBx img {
+  max-width: 100%;
 }
